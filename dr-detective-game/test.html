@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<title>Twitter Bootstrap Grid System Example - w3resource Twitter Bootstrap Tutorial</title> 
+<meta name="description" content="Creating a 16 columns Grid with Twitter Bootstrap. Learn with examples to create a Grid System in Twitter Bootstrap."> 
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+<style>
+.span12 h1{color:#FE6E4C; font-weight: bold; padding: 5px;}
+h3 {margin: 10px 0 10px 0;}
+</style>
+</head>
+<body>
+<?php include 'get_data.php'; ?>
+
+   <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Dr. Watson</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="#about">Home</a></li>
+              <li class="active"><a href="#">Game</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+      
+<div class="container">
+
+<div class="row">
+<div class="span12">
+The patient is suffering from <?php echo 'suffering from $diagnosis' ?>. <br/>
+<h4>
+Identify all the findings that lead to the diagnosis.
+<h4/>
+</div>
+</div>
+
+<div class="row">
+<div class="span12">
+<h3>
+example
+<h3/>
+</div>
+</div>
+
+
+<div class="row">
+<div class="span3">
+<p><img src="/images/w3logo6.png" width="149" height="52" alt="w3resource logo" /></p> 
+</div>
+<div class="span9">
+<p>w3resource offers web development tutorials. We believe in Open Source. Love standards. And prioritize simplicity and readability while serving content. With 3000+ unique content pages and thousands of examples, we are comprehensive. We have online practice editors to play around with the example codes.</p> 
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+            

@@ -1,0 +1,11 @@
+- show other user results
+- show other user results popularity
+
+- measure: time, number of terms, term distribution
+
+IDEA:
+- penalties for terms that never got support
+- agreement points for edit distance
+
+- 
+
