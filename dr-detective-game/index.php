@@ -27,13 +27,13 @@
               <li><a href="game.php">Game</a></li>
               <li><a href="leaders.php">
               High Scores</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="about.php">About</a></li>
             </ul>
             
             <ul class="nav pull-right">
               <li class="navmsg">Hi <span class="navname" id="navuser"></span>! You scored: <span class="navimp" id="navscore"> </span> points</li>
               <li><a href="#" id="notifPopover" rel="popover" data-content="<?php echo $pop_text; ?>"><img src="img/red.png" width="25" height="25"><img src="img/blue.png" width="20" height="20"></a></li>
-              <li><a href="login.php">(logout)</a></li>
+              <li><a href="logout.php">(logout)</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

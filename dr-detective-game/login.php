@@ -18,6 +18,12 @@
           </button>
           <a class="brand" href="#">Dr.Detective</a>
          
+         <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="about.php">About</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+
         </div>
       </div>
    </div>

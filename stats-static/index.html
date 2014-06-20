@@ -1,0 +1,2305 @@
+<html>
+
+<head>
+<title>Game Statistics</title>
+<script src="Chart.js/Chart.js"></script>
+<script src="amcharts_2.10.4/amcharts/amcharts.js"
+	type="text/javascript"></script>
+<meta name="viewport" content="initial-scale = 1, user-scalable = no">
+<style>
+canvas {
+	
+}
+</style>
+</head>
+
+<body>
+
+	<h1>Game Statistics</h1>
+	<h2>Snapshot taken June 2014</h2>
+
+	<p>Users who played the game version: 13</p>
+	<p>Users who played the simple version: 7</p>
+	<p>Users who played both versions: 6</p>
+	<p>Users who played either of the versions: 15</p>
+	<br />
+	<script>
+		var factorNoGame = new Array();
+		var factorNoSimple = new Array();
+		var factorNoCombined = new Array();
+		var gameUsers = new Array();
+		var simpleUsers = new Array();
+		var factorTypesGame = new Array();
+		var factorTypesSimple = new Array();
+		var factorTypesCombined = new Array();
+		factorNoGame.push(1);
+		factorNoSimple.push(1);
+		factorNoCombined.push(2);
+		gameUsers.push(3);
+		simpleUsers.push(1);
+		factorTypesGame.push(1);
+		factorTypesSimple.push(1);
+		factorTypesCombined.push(2);
+		factorNoGame.push(5);
+		factorNoSimple.push(14);
+		factorNoCombined.push(14);
+		gameUsers.push(2);
+		simpleUsers.push(3);
+		factorTypesGame.push(2);
+		factorTypesSimple.push(3);
+		factorTypesCombined.push(3);
+		factorNoGame.push(6);
+		factorNoSimple.push(9);
+		factorNoCombined.push(9);
+		gameUsers.push(3);
+		simpleUsers.push(3);
+		factorTypesGame.push(3);
+		factorTypesSimple.push(5);
+		factorTypesCombined.push(5);
+		factorNoGame.push(2);
+		factorNoSimple.push(10);
+		factorNoCombined.push(12);
+		gameUsers.push(3);
+		simpleUsers.push(2);
+		factorTypesGame.push(2);
+		factorTypesSimple.push(1);
+		factorTypesCombined.push(2);
+		factorNoGame.push(6);
+		factorNoSimple.push(9);
+		factorNoCombined.push(15);
+		gameUsers.push(2);
+		simpleUsers.push(2);
+		factorTypesGame.push(5);
+		factorTypesSimple.push(4);
+		factorTypesCombined.push(5);
+		factorNoGame.push(14);
+		factorNoSimple.push(6);
+		factorNoCombined.push(16);
+		gameUsers.push(5);
+		simpleUsers.push(2);
+		factorTypesGame.push(4);
+		factorTypesSimple.push(3);
+		factorTypesCombined.push(4);
+		factorNoGame.push(12);
+		factorNoSimple.push(0);
+		factorNoCombined.push(12);
+		gameUsers.push(3);
+		simpleUsers.push(1);
+		factorTypesGame.push(7);
+		factorTypesSimple.push(0);
+		factorTypesCombined.push(7);
+		factorNoGame.push(12);
+		factorNoSimple.push(18);
+		factorNoCombined.push(26);
+		gameUsers.push(3);
+		simpleUsers.push(2);
+		factorTypesGame.push(4);
+		factorTypesSimple.push(5);
+		factorTypesCombined.push(6);
+		factorNoGame.push(20);
+		factorNoSimple.push(14);
+		factorNoCombined.push(24);
+		gameUsers.push(6);
+		simpleUsers.push(2);
+		factorTypesGame.push(6);
+		factorTypesSimple.push(5);
+		factorTypesCombined.push(6);
+		factorNoGame.push(15);
+		factorNoSimple.push(1);
+		factorNoCombined.push(16);
+		gameUsers.push(4);
+		simpleUsers.push(1);
+		factorTypesGame.push(5);
+		factorTypesSimple.push(1);
+		factorTypesCombined.push(5);
+		factorNoGame.push(7);
+		factorNoSimple.push(1);
+		factorNoCombined.push(7);
+		gameUsers.push(3);
+		simpleUsers.push(1);
+		factorTypesGame.push(3);
+		factorTypesSimple.push(1);
+		factorTypesCombined.push(3);
+		factorNoGame.push(5);
+		factorNoSimple.push(8);
+		factorNoCombined.push(9);
+		gameUsers.push(3);
+		simpleUsers.push(4);
+		factorTypesGame.push(4);
+		factorTypesSimple.push(7);
+		factorTypesCombined.push(7);
+		factorNoGame.push(0);
+		factorNoSimple.push(24);
+		factorNoCombined.push(24);
+		gameUsers.push(0);
+		simpleUsers.push(3);
+		factorTypesGame.push(0);
+		factorTypesSimple.push(4);
+		factorTypesCombined.push(4);
+		factorNoGame.push(10);
+		factorNoSimple.push(12);
+		factorNoCombined.push(17);
+		gameUsers.push(4);
+		simpleUsers.push(3);
+		factorTypesGame.push(5);
+		factorTypesSimple.push(5);
+		factorTypesCombined.push(6);
+		factorNoGame.push(36);
+		factorNoSimple.push(40);
+		factorNoCombined.push(52);
+		gameUsers.push(3);
+		simpleUsers.push(3);
+		factorTypesGame.push(6);
+		factorTypesSimple.push(8);
+		factorTypesCombined.push(8);
+		factorNoGame.push(17);
+		factorNoSimple.push(33);
+		factorNoCombined.push(36);
+		gameUsers.push(2);
+		simpleUsers.push(3);
+		factorTypesGame.push(6);
+		factorTypesSimple.push(10);
+		factorTypesCombined.push(10);
+		factorNoGame.push(24);
+		factorNoSimple.push(4);
+		factorNoCombined.push(27);
+		gameUsers.push(4);
+		simpleUsers.push(1);
+		factorTypesGame.push(3);
+		factorTypesSimple.push(4);
+		factorTypesCombined.push(4);
+		factorNoGame.push(1);
+		factorNoSimple.push(6);
+		factorNoCombined.push(7);
+		gameUsers.push(1);
+		simpleUsers.push(1);
+		factorTypesGame.push(1);
+		factorTypesSimple.push(5);
+		factorTypesCombined.push(5);
+		factorNoGame.push(1);
+		factorNoSimple.push(0);
+		factorNoCombined.push(1);
+		gameUsers.push(1);
+		simpleUsers.push(0);
+		factorTypesGame.push(1);
+		factorTypesSimple.push(0);
+		factorTypesCombined.push(1);
+		factorNoGame.push(1);
+		factorNoSimple.push(5);
+		factorNoCombined.push(6);
+		gameUsers.push(1);
+		simpleUsers.push(1);
+		factorTypesGame.push(1);
+		factorTypesSimple.push(5);
+		factorTypesCombined.push(6);
+	</script>
+	<table>
+		<tr>
+			<td>Number of <br /> distinct <br /> users
+			</td>
+			<td>
+				<canvas id="canvas_users" height="450" width="600"></canvas>
+			</td>
+			<td><span style="background-color: rgba(255, 0, 0, 0.5)">
+					game version </span><br /> <br /> <span
+				style="background-color: rgba(151, 187, 205, 0.5)"> simple
+					version </span><br /> <br /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="center">Paragraphs</td>
+			<td></td>
+		</tr>
+	</table>
+	<script>
+		var lb = new Array();
+		for ( var i = 1; i <= 20; i++) {
+			lb.push(i.toString());
+		}
+
+		var barChartData = {
+			labels : lb,
+			datasets : [ {
+				fillColor : "rgba(255,0,0,0.5)",
+				strokeColor : "rgba(220,0,0,1)",
+				data : gameUsers
+			}, {
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,1)",
+				data : simpleUsers
+			} ]
+
+		}
+
+		var m1 = Math.max.apply(Math, gameUsers);
+		var m2 = Math.max.apply(Math, simpleUsers);
+		var myLine = new Chart(document.getElementById("canvas_users")
+				.getContext("2d")).Bar(barChartData, {
+			scaleOverride : true,
+			scaleSteps : Math.max(m1, m2),
+			scaleStepWidth : 1,
+			scaleStartValue : 0
+		});
+	</script>
+
+	<br />
+	<br />
+	<table>
+		<tr>
+			<td>Number of <br /> distinct terms <br /> found
+			</td>
+			<td>
+				<canvas id="canvas" height="450" width="600"></canvas>
+			</td>
+			<td><span style="background-color: rgba(255, 0, 0, 0.5)">
+					game version </span><br /> <br /> <span
+				style="background-color: rgba(151, 187, 205, 0.5)"> simple
+					version </span><br /> <br /> <span
+				style="background-color: rgba(0, 255, 0, 0.5)"> both versions
+			</span></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="center">Paragraphs</td>
+			<td></td>
+		</tr>
+	</table>
+	<script>
+		var barChartData = {
+			labels : lb,
+			datasets : [ {
+				fillColor : "rgba(255,0,0,0.5)",
+				strokeColor : "rgba(220,0,0,1)",
+				data : factorNoGame
+			}, {
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,1)",
+				data : factorNoSimple
+			}, {
+				fillColor : "rgba(0,255,0,0.5)",
+				strokeColor : "rgba(0,255,0,1)",
+				data : factorNoCombined
+			} ]
+
+		}
+
+		var m1 = Math.max.apply(Math, factorNoGame);
+		var m2 = Math.max.apply(Math, factorNoSimple);
+		var m3 = Math.max.apply(Math, factorNoCombined);
+		var myLine = new Chart(document.getElementById("canvas").getContext(
+				"2d")).Bar(barChartData, {
+			scaleOverride : true,
+			scaleSteps : Math.max(m1, Math.max(m2, m3)) / 2,
+			scaleStepWidth : 2,
+			scaleStartValue : 0
+		});
+	</script>
+
+	<br />
+	<br />
+	<table>
+		<tr>
+			<td>Number of <br /> distinct <br /> factor types <br />
+				found
+			</td>
+			<td>
+				<canvas id="canvas_types" height="450" width="600"></canvas>
+			</td>
+			<td><span style="background-color: rgba(255, 0, 0, 0.5)">
+					game version </span><br /> <br /> <span
+				style="background-color: rgba(151, 187, 205, 0.5)"> simple
+					version </span><br /> <br /> <span
+				style="background-color: rgba(0, 255, 0, 0.5)"> both versions
+			</span></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="center">Paragraphs</td>
+			<td></td>
+		</tr>
+	</table>
+	<script>
+		var barChartData = {
+			labels : lb,
+			datasets : [ {
+				fillColor : "rgba(255,0,0,0.5)",
+				strokeColor : "rgba(220,0,0,1)",
+				data : factorTypesGame
+			}, {
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,1)",
+				data : factorTypesSimple
+			}, {
+				fillColor : "rgba(0,255,0,0.5)",
+				strokeColor : "rgba(0,255,0,1)",
+				data : factorTypesCombined
+			} ]
+
+		}
+
+		var m1 = Math.max.apply(Math, factorTypesGame);
+		var m2 = Math.max.apply(Math, factorTypesSimple);
+		var m3 = Math.max.apply(Math, factorTypesCombined);
+		var myLine = new Chart(document.getElementById("canvas_types")
+				.getContext("2d")).Bar(barChartData, {
+			scaleOverride : true,
+			scaleSteps : Math.max(m1, Math.max(m2, m3)),
+			scaleStepWidth : 1,
+			scaleStartValue : 0
+		});
+	</script>
+
+	<script type="text/javascript">
+		var myJsArray = {
+			"1" : [ [], [], [ "Factors" ] ],
+			"2" : [ [], [ "Factors", "Medical Tests" ] ],
+			"3" : [ [ "Factors" ], [], [ "Age", "Gender" ] ],
+			"4" : [ [], [ "Factors" ], [ "Medical Tests" ] ],
+			"5" : [
+					[ "Medical Tests", "Medications", "Therapeutic Procedures",
+							"Time\/Duration" ], [ "Diseases" ] ],
+			"6" : [ [ "Factors", "Medications", "Time\/Duration" ], [],
+					[ "Medical Tests" ], [], [] ],
+			"7" : [
+					[ "Factors", "Diseases", "Medications", "Allergies",
+							"Gender", "Time\/Duration" ], [ "Other" ], [] ],
+			"8" : [ [ "Factors", "Medical Tests" ],
+					[ "Gender", "Time\/Duration" ], [] ],
+			"9" : [
+					[ "Factors", "Medical Tests", "Medications",
+							"Therapeutic Procedures", "Time\/Duration" ],
+					[ "Diseases" ], [], [], [], [] ],
+			"10" : [
+					[ "Factors", "Medical Tests", "Medications",
+							"Time\/Duration" ], [], [ "Diseases" ], [] ],
+			"11" : [ [ "Factors" ], [], [ "Medical Tests", "Diseases" ] ],
+			"12" : [ [ "Factors" ], [], [ "Diseases", "Age", "Gender" ] ],
+			"14" : [
+					[ "Factors", "Medical Tests", "Diseases", "Time\/Duration" ],
+					[], [], [ "Therapeutic Procedures" ] ],
+			"15" : [
+					[ "Factors", "Diseases", "Medications", "Gender",
+							"Occupation", "Time\/Duration" ], [], [] ],
+			"16" : [
+					[ "Factors" ],
+					[ "Medical Tests", "Diseases", "Medications",
+							"Therapeutic Procedures", "Time\/Duration" ] ],
+			"17" : [ [ "Factors" ], [ "Medical Tests", "Time\/Duration" ], [],
+					[] ],
+			"18" : [ [ "Factors" ] ],
+			"19" : [ [ "Factors" ] ],
+			"20" : [ [ "Factors" ] ]
+		};
+	</script>
+
+
+	<script type="text/javascript">
+		var chart;
+
+		var colorArr = [ "#FFEBCD", "#0000FF", "#8A2BE2", "#A52A2A", "#DEB887",
+				"#5F9EA0", "#7FFF00", "#D2691E", "#FF7F50", "#6495ED",
+				"#FFF8DC", "#DC143C", "#00FFFF", "#00008B", "#008B8B",
+				"#B8860B", "#A9A9A9", "#006400", "#BDB76B", "#8B008B",
+				"#556B2F", "#FF8C00", "#9932CC", "#8B0000", "#E9967A",
+				"#8FBC8F", "#483D8B", "#2F4F4F", "#00CED1", "#9400D3",
+				"#FF1493", "#00BFFF", "#696969", "#1E90FF", "#B22222",
+				"#FFFAF0", "#228B22", "#FF00FF", "#FFD700", "#DCDCDC" ];
+
+		var chartDataTerms = [ {
+			"paragraph" : "1",
+			"game_it_0" : 0,
+			"simple_it_0" : 1,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 50,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 50,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "2",
+			"game_it_0" : 0,
+			"simple_it_0" : 0,
+			"game_it_1" : 5,
+			"simple_it_1" : 10,
+			"game_it_2" : 0,
+			"simple_it_2" : 4,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 36,
+			"simple_it_per_1" : 71,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 29,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "3",
+			"game_it_0" : 2,
+			"simple_it_0" : 1,
+			"game_it_1" : 0,
+			"simple_it_1" : 7,
+			"game_it_2" : 4,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 22,
+			"simple_it_per_0" : 11,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 78,
+			"game_it_per_2" : 44,
+			"simple_it_per_2" : 11,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "4",
+			"game_it_0" : 0,
+			"simple_it_0" : 1,
+			"game_it_1" : 1,
+			"simple_it_1" : 9,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 8,
+			"game_it_per_1" : 8,
+			"simple_it_per_1" : 75,
+			"game_it_per_2" : 8,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "5",
+			"game_it_0" : 5,
+			"simple_it_0" : 0,
+			"game_it_1" : 1,
+			"simple_it_1" : 9,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 33,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 7,
+			"simple_it_per_1" : 60,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "6",
+			"game_it_0" : 3,
+			"simple_it_0" : 0,
+			"game_it_1" : 6,
+			"simple_it_1" : 6,
+			"game_it_2" : 4,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 1,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 19,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 38,
+			"simple_it_per_1" : 38,
+			"game_it_per_2" : 25,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 6,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "7",
+			"game_it_0" : 6,
+			"simple_it_0" : 0,
+			"game_it_1" : 5,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 50,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 42,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 8,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "8",
+			"game_it_0" : 2,
+			"simple_it_0" : 1,
+			"game_it_1" : 9,
+			"simple_it_1" : 17,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 8,
+			"simple_it_per_0" : 4,
+			"game_it_per_1" : 35,
+			"simple_it_per_1" : 65,
+			"game_it_per_2" : 4,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "9",
+			"game_it_0" : 5,
+			"simple_it_0" : 0,
+			"game_it_1" : 8,
+			"simple_it_1" : 14,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 1,
+			"simple_it_4" : 0,
+			"game_it_5" : 5,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 21,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 33,
+			"simple_it_per_1" : 58,
+			"game_it_per_2" : 4,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 4,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 21,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "10",
+			"game_it_0" : 4,
+			"simple_it_0" : 1,
+			"game_it_1" : 7,
+			"simple_it_1" : 0,
+			"game_it_2" : 4,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 25,
+			"simple_it_per_0" : 6,
+			"game_it_per_1" : 44,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 25,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "11",
+			"game_it_0" : 1,
+			"simple_it_0" : 1,
+			"game_it_1" : 1,
+			"simple_it_1" : 0,
+			"game_it_2" : 5,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 14,
+			"simple_it_per_0" : 14,
+			"game_it_per_1" : 14,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 71,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "12",
+			"game_it_0" : 2,
+			"simple_it_0" : 4,
+			"game_it_1" : 0,
+			"simple_it_1" : 2,
+			"game_it_2" : 3,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 1,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 22,
+			"simple_it_per_0" : 44,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 22,
+			"game_it_per_2" : 33,
+			"simple_it_per_2" : 11,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 11,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "13",
+			"game_it_0" : 0,
+			"simple_it_0" : 20,
+			"game_it_1" : 0,
+			"simple_it_1" : 2,
+			"game_it_2" : 0,
+			"simple_it_2" : 2,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 83,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 8,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 8,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "14",
+			"game_it_0" : 6,
+			"simple_it_0" : 8,
+			"game_it_1" : 1,
+			"simple_it_1" : 1,
+			"game_it_2" : 1,
+			"simple_it_2" : 3,
+			"game_it_3" : 2,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 35,
+			"simple_it_per_0" : 47,
+			"game_it_per_1" : 6,
+			"simple_it_per_1" : 6,
+			"game_it_per_2" : 6,
+			"simple_it_per_2" : 18,
+			"game_it_per_3" : 12,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "15",
+			"game_it_0" : 29,
+			"simple_it_0" : 29,
+			"game_it_1" : 1,
+			"simple_it_1" : 6,
+			"game_it_2" : 6,
+			"simple_it_2" : 5,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 56,
+			"simple_it_per_0" : 56,
+			"game_it_per_1" : 2,
+			"simple_it_per_1" : 12,
+			"game_it_per_2" : 12,
+			"simple_it_per_2" : 10,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "16",
+			"game_it_0" : 1,
+			"simple_it_0" : 20,
+			"game_it_1" : 16,
+			"simple_it_1" : 5,
+			"game_it_2" : 0,
+			"simple_it_2" : 8,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 3,
+			"simple_it_per_0" : 56,
+			"game_it_per_1" : 44,
+			"simple_it_per_1" : 14,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 22,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "17",
+			"game_it_0" : 1,
+			"simple_it_0" : 4,
+			"game_it_1" : 14,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 8,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 4,
+			"simple_it_per_0" : 15,
+			"game_it_per_1" : 52,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 4,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 30,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "18",
+			"game_it_0" : 1,
+			"simple_it_0" : 6,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 14,
+			"simple_it_per_0" : 86,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "19",
+			"game_it_0" : 1,
+			"simple_it_0" : 0,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 100,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "20",
+			"game_it_0" : 1,
+			"simple_it_0" : 5,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 17,
+			"simple_it_per_0" : 83,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		} ];
+		var chartDataTypes = [ {
+			"paragraph" : "1",
+			"game_it_0" : 0,
+			"simple_it_0" : 1,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 50,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 50,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "2",
+			"game_it_0" : 0,
+			"simple_it_0" : 0,
+			"game_it_1" : 2,
+			"simple_it_1" : 2,
+			"game_it_2" : 0,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 67,
+			"simple_it_per_1" : 67,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 33,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "3",
+			"game_it_0" : 1,
+			"simple_it_0" : 1,
+			"game_it_1" : 0,
+			"simple_it_1" : 3,
+			"game_it_2" : 2,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 20,
+			"simple_it_per_0" : 20,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 60,
+			"game_it_per_2" : 40,
+			"simple_it_per_2" : 20,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "4",
+			"game_it_0" : 0,
+			"simple_it_0" : 1,
+			"game_it_1" : 1,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 50,
+			"game_it_per_1" : 50,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 50,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "5",
+			"game_it_0" : 4,
+			"simple_it_0" : 0,
+			"game_it_1" : 1,
+			"simple_it_1" : 4,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 80,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 20,
+			"simple_it_per_1" : 80,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "6",
+			"game_it_0" : 3,
+			"simple_it_0" : 0,
+			"game_it_1" : 0,
+			"simple_it_1" : 3,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 75,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 75,
+			"game_it_per_2" : 25,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "7",
+			"game_it_0" : 6,
+			"simple_it_0" : 0,
+			"game_it_1" : 1,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 86,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 14,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "8",
+			"game_it_0" : 2,
+			"simple_it_0" : 1,
+			"game_it_1" : 2,
+			"simple_it_1" : 4,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 33,
+			"simple_it_per_0" : 17,
+			"game_it_per_1" : 33,
+			"simple_it_per_1" : 67,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "9",
+			"game_it_0" : 5,
+			"simple_it_0" : 0,
+			"game_it_1" : 1,
+			"simple_it_1" : 5,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 83,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 17,
+			"simple_it_per_1" : 83,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "10",
+			"game_it_0" : 4,
+			"simple_it_0" : 1,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 80,
+			"simple_it_per_0" : 20,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 20,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "11",
+			"game_it_0" : 1,
+			"simple_it_0" : 1,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 2,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 33,
+			"simple_it_per_0" : 33,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 67,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "12",
+			"game_it_0" : 1,
+			"simple_it_0" : 4,
+			"game_it_1" : 0,
+			"simple_it_1" : 2,
+			"game_it_2" : 3,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 1,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 14,
+			"simple_it_per_0" : 57,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 29,
+			"game_it_per_2" : 43,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 14,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "13",
+			"game_it_0" : 0,
+			"simple_it_0" : 3,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 75,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 25,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "14",
+			"game_it_0" : 4,
+			"simple_it_0" : 5,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 1,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 67,
+			"simple_it_per_0" : 83,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 17,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "15",
+			"game_it_0" : 6,
+			"simple_it_0" : 6,
+			"game_it_1" : 0,
+			"simple_it_1" : 2,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 75,
+			"simple_it_per_0" : 75,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 25,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "16",
+			"game_it_0" : 1,
+			"simple_it_0" : 7,
+			"game_it_1" : 5,
+			"simple_it_1" : 1,
+			"game_it_2" : 0,
+			"simple_it_2" : 2,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 10,
+			"simple_it_per_0" : 70,
+			"game_it_per_1" : 50,
+			"simple_it_per_1" : 10,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 20,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "17",
+			"game_it_0" : 1,
+			"simple_it_0" : 4,
+			"game_it_1" : 2,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 25,
+			"simple_it_per_0" : 100,
+			"game_it_per_1" : 50,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "18",
+			"game_it_0" : 1,
+			"simple_it_0" : 5,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 20,
+			"simple_it_per_0" : 100,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "19",
+			"game_it_0" : 1,
+			"simple_it_0" : 0,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 100,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "20",
+			"game_it_0" : 1,
+			"simple_it_0" : 5,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 17,
+			"simple_it_per_0" : 83,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		} ];
+		var chartDataWords = [ {
+			"paragraph" : "1",
+			"game_it_0" : 0,
+			"simple_it_0" : 5,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 83,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 17,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "2",
+			"game_it_0" : 0,
+			"simple_it_0" : 0,
+			"game_it_1" : 12,
+			"simple_it_1" : 26,
+			"game_it_2" : 0,
+			"simple_it_2" : 21,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 26,
+			"simple_it_per_1" : 55,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 45,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "3",
+			"game_it_0" : 2,
+			"simple_it_0" : 5,
+			"game_it_1" : 0,
+			"simple_it_1" : 3,
+			"game_it_2" : 5,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 22,
+			"simple_it_per_0" : 56,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 33,
+			"game_it_per_2" : 56,
+			"simple_it_per_2" : 11,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "4",
+			"game_it_0" : 0,
+			"simple_it_0" : 9,
+			"game_it_1" : 1,
+			"simple_it_1" : 21,
+			"game_it_2" : 2,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 28,
+			"game_it_per_1" : 3,
+			"simple_it_per_1" : 66,
+			"game_it_per_2" : 6,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "5",
+			"game_it_0" : 39,
+			"simple_it_0" : 0,
+			"game_it_1" : 2,
+			"simple_it_1" : 23,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 91,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 5,
+			"simple_it_per_1" : 53,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "6",
+			"game_it_0" : 18,
+			"simple_it_0" : 0,
+			"game_it_1" : 1,
+			"simple_it_1" : 13,
+			"game_it_2" : 7,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 69,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 4,
+			"simple_it_per_1" : 50,
+			"game_it_per_2" : 27,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "7",
+			"game_it_0" : 43,
+			"simple_it_0" : 0,
+			"game_it_1" : 21,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 67,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 33,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "8",
+			"game_it_0" : 28,
+			"simple_it_0" : 38,
+			"game_it_1" : 13,
+			"simple_it_1" : 18,
+			"game_it_2" : 4,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 45,
+			"simple_it_per_0" : 61,
+			"game_it_per_1" : 21,
+			"simple_it_per_1" : 29,
+			"game_it_per_2" : 6,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "9",
+			"game_it_0" : 39,
+			"simple_it_0" : 0,
+			"game_it_1" : 7,
+			"simple_it_1" : 40,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 1,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 83,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 15,
+			"simple_it_per_1" : 85,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 2,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "10",
+			"game_it_0" : 23,
+			"simple_it_0" : 2,
+			"game_it_1" : 5,
+			"simple_it_1" : 0,
+			"game_it_2" : 2,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 77,
+			"simple_it_per_0" : 7,
+			"game_it_per_1" : 17,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 7,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "11",
+			"game_it_0" : 16,
+			"simple_it_0" : 2,
+			"game_it_1" : 6,
+			"simple_it_1" : 0,
+			"game_it_2" : 14,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 44,
+			"simple_it_per_0" : 6,
+			"game_it_per_1" : 17,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 39,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "12",
+			"game_it_0" : 5,
+			"simple_it_0" : 11,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 2,
+			"simple_it_2" : 2,
+			"game_it_3" : 0,
+			"simple_it_3" : 2,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 33,
+			"simple_it_per_0" : 73,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 13,
+			"simple_it_per_2" : 13,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 13,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "13",
+			"game_it_0" : 0,
+			"simple_it_0" : 62,
+			"game_it_1" : 0,
+			"simple_it_1" : 1,
+			"game_it_2" : 0,
+			"simple_it_2" : 19,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 0,
+			"simple_it_per_0" : 76,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 1,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 23,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "14",
+			"game_it_0" : 27,
+			"simple_it_0" : 36,
+			"game_it_1" : 3,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 1,
+			"game_it_3" : 5,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 71,
+			"simple_it_per_0" : 95,
+			"game_it_per_1" : 8,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 3,
+			"game_it_per_3" : 13,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "15",
+			"game_it_0" : 76,
+			"simple_it_0" : 75,
+			"game_it_1" : 3,
+			"simple_it_1" : 19,
+			"game_it_2" : 19,
+			"simple_it_2" : 3,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 73,
+			"simple_it_per_0" : 72,
+			"game_it_per_1" : 3,
+			"simple_it_per_1" : 18,
+			"game_it_per_2" : 18,
+			"simple_it_per_2" : 3,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "16",
+			"game_it_0" : 28,
+			"simple_it_0" : 54,
+			"game_it_1" : 28,
+			"simple_it_1" : 6,
+			"game_it_2" : 0,
+			"simple_it_2" : 1,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 42,
+			"simple_it_per_0" : 82,
+			"game_it_per_1" : 42,
+			"simple_it_per_1" : 9,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 2,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "17",
+			"game_it_0" : 6,
+			"simple_it_0" : 43,
+			"game_it_1" : 26,
+			"simple_it_1" : 0,
+			"game_it_2" : 1,
+			"simple_it_2" : 0,
+			"game_it_3" : 17,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 11,
+			"simple_it_per_0" : 80,
+			"game_it_per_1" : 48,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 2,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 31,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "18",
+			"game_it_0" : 49,
+			"simple_it_0" : 95,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 48,
+			"simple_it_per_0" : 93,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "19",
+			"game_it_0" : 35,
+			"simple_it_0" : 0,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 100,
+			"simple_it_per_0" : 0,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		}, {
+			"paragraph" : "20",
+			"game_it_0" : 56,
+			"simple_it_0" : 23,
+			"game_it_1" : 0,
+			"simple_it_1" : 0,
+			"game_it_2" : 0,
+			"simple_it_2" : 0,
+			"game_it_3" : 0,
+			"simple_it_3" : 0,
+			"game_it_4" : 0,
+			"simple_it_4" : 0,
+			"game_it_5" : 0,
+			"simple_it_5" : 0,
+			"game_it_per_0" : 84,
+			"simple_it_per_0" : 34,
+			"game_it_per_1" : 0,
+			"simple_it_per_1" : 0,
+			"game_it_per_2" : 0,
+			"simple_it_per_2" : 0,
+			"game_it_per_3" : 0,
+			"simple_it_per_3" : 0,
+			"game_it_per_4" : 0,
+			"simple_it_per_4" : 0,
+			"game_it_per_5" : 0,
+			"simple_it_per_5" : 0
+		} ];
+
+		var chartData = chartDataTypes;
+		var titleBar = "types";
+
+		var maxIter = 5;
+
+		AmCharts.ready(function() {
+			createStockChart();
+			createChartLines();
+		});
+
+		function createStockChart() {
+			// SERIAL CHART
+			chart = new AmCharts.AmSerialChart();
+			chart.dataProvider = chartData;
+			chart.categoryField = "paragraph";
+			chart.plotAreaBorderAlpha = 0.2;
+
+			// AXES
+			// category
+			var categoryAxis = chart.categoryAxis;
+			categoryAxis.gridAlpha = 0.1;
+			categoryAxis.axisAlpha = 0;
+			categoryAxis.gridPosition = "start";
+
+			// value
+			var valueAxis = new AmCharts.ValueAxis();
+			valueAxis.stackType = "regular";
+			valueAxis.gridAlpha = 0.1;
+			valueAxis.axisAlpha = 0;
+			chart.addValueAxis(valueAxis);
+
+			// GRAPHS
+			// first graph
+
+			for ( var i = 0; i <= maxIter; i++) {
+				var pr = i + 1;
+				var graph = new AmCharts.AmGraph();
+				graph.title = pr + " game rounds";
+				graph.labelText = "[[game_it_per_" + i + "]]%";
+				graph.valueField = "game_it_" + i;
+				graph.type = "column";
+				graph.lineAlpha = 0;
+				graph.fillAlphas = 1;
+				graph.lineColor = colorArr[i];
+				chart.addGraph(graph);
+			}
+
+			var valueAxis2 = new AmCharts.ValueAxis();
+			valueAxis2.stackType = "regular";
+			valueAxis2.gridAlpha = 0.1;
+			valueAxis2.axisAlpha = 0;
+			valueAxis2.position = "right";
+			valueAxis2.synchronizationMultiplier = 1;
+			valueAxis2.synchronizeWithAxis(valueAxis);
+			chart.addValueAxis(valueAxis2)
+
+			for ( var i = 0; i <= maxIter; i++) {
+				var pr = i + 1;
+				var graph = new AmCharts.AmGraph();
+				graph.title = pr + " simple rounds";
+				graph.labelText = "[[simple_it_per_" + i + "]]%";
+				graph.valueField = "simple_it_" + i;
+				graph.stackable = true;
+				graph.type = "column";
+				graph.lineAlpha = 0;
+				graph.fillAlphas = 1;
+				graph.lineColor = colorArr[i + 1 + maxIter];
+				graph.valueAxis = valueAxis2;
+				chart.addGraph(graph);
+			}
+
+			// LEGEND                  
+			var legend = new AmCharts.AmLegend();
+			legend.borderAlpha = 0.2;
+			legend.valueWidth = 0;
+			legend.horizontalGap = 10;
+			chart.addLegend(legend);
+
+			chart.addTitle("Percentage of new " + titleBar
+					+ " found per paragraph, after each round of the game");
+
+			// WRITE
+			chart.write("chartdiv");
+		}
+
+		// this method sets chart 2D/3D
+		function setDepth() {
+			if (document.getElementById("rb1").checked) {
+				chart.depth3D = 0;
+				chart.angle = 0;
+			} else {
+				chart.depth3D = 25;
+				chart.angle = 30;
+			}
+			chart.validateNow();
+		}
+
+		// set the data in the chart
+		function setData() {
+			if (document.getElementById("rb1").checked) {
+				chartData = chartDataTypes;
+				titleBar = "term types";
+			} else if (document.getElementById("rb2").checked) {
+				chartData = chartDataTerms;
+				titleBar = "unique terms";
+			} else {
+				chartData = chartDataWords;
+				titleBar = "words";
+			}
+			createStockChart();
+		}
+	</script>
+
+	<div id="chartdiv" style="width: 1500px; height: 600px;"></div>
+	<div style="margin-left: 30px;">
+		<input type="radio" checked="true" name="group" id="rb1"
+			onclick="setData()">term types <input type="radio"
+			name="group" id="rb2" onclick="setData()">unique terms <input
+			type="radio" name="group" id="rb3" onclick="setData()">words
+	</div>
+
+	<br />
+	<br />
+	<br />
+	<script type="text/javascript">
+		var chartLinesData = [ {
+			"round" : 1,
+			"game_term_0" : 2,
+			"simple_term_0" : 4,
+			"game_word_0" : 5,
+			"simple_word_0" : 11,
+			"game_type_0" : 1,
+			"simple_type_0" : 4,
+			"par_game_0" : "par. 12 game",
+			"par_simple_0" : "par. 12 simple",
+			"game_term_1" : 6,
+			"simple_term_1" : 8,
+			"game_word_1" : 27,
+			"simple_word_1" : 36,
+			"game_type_1" : 4,
+			"simple_type_1" : 5,
+			"par_game_1" : "par. 14 game",
+			"par_simple_1" : "par. 14 simple",
+			"game_term_2" : 29,
+			"simple_term_2" : 29,
+			"game_word_2" : 76,
+			"simple_word_2" : 75,
+			"game_type_2" : 6,
+			"simple_type_2" : 6,
+			"par_game_2" : "par. 15 game",
+			"par_simple_2" : "par. 15 simple"
+		}, {
+			"round" : 2,
+			"game_term_0" : 2,
+			"simple_term_0" : 6,
+			"game_word_0" : 5,
+			"simple_word_0" : 11,
+			"game_type_0" : 1,
+			"simple_type_0" : 6,
+			"par_game_0" : "par. 12 game",
+			"par_simple_0" : "par. 12 simple",
+			"game_term_1" : 7,
+			"simple_term_1" : 9,
+			"game_word_1" : 30,
+			"simple_word_1" : 36,
+			"game_type_1" : 4,
+			"simple_type_1" : 5,
+			"par_game_1" : "par. 14 game",
+			"par_simple_1" : "par. 14 simple",
+			"game_term_2" : 30,
+			"simple_term_2" : 35,
+			"game_word_2" : 79,
+			"simple_word_2" : 94,
+			"game_type_2" : 6,
+			"simple_type_2" : 8,
+			"par_game_2" : "par. 15 game",
+			"par_simple_2" : "par. 15 simple"
+		}, {
+			"round" : 3,
+			"game_term_0" : 5,
+			"simple_term_0" : 7,
+			"game_word_0" : 7,
+			"simple_word_0" : 13,
+			"game_type_0" : 4,
+			"simple_type_0" : 6,
+			"par_game_0" : "par. 12 game",
+			"par_simple_0" : "par. 12 simple",
+			"game_term_1" : 8,
+			"simple_term_1" : 12,
+			"game_word_1" : 30,
+			"simple_word_1" : 37,
+			"game_type_1" : 4,
+			"simple_type_1" : 5,
+			"par_game_1" : "par. 14 game",
+			"par_simple_1" : "par. 14 simple",
+			"game_term_2" : 36,
+			"simple_term_2" : 40,
+			"game_word_2" : 98,
+			"simple_word_2" : 97,
+			"game_type_2" : 6,
+			"simple_type_2" : 8,
+			"par_game_2" : "par. 15 game",
+			"par_simple_2" : "par. 15 simple"
+		}, {
+			"round" : 4,
+			"simple_term_0" : 8,
+			"simple_word_0" : 15,
+			"simple_type_0" : 7,
+			"par_game_0" : "par. 12 game",
+			"par_simple_0" : "par. 12 simple",
+			"game_term_1" : 10,
+			"game_word_1" : 35,
+			"game_type_1" : 5,
+			"par_game_1" : "par. 14 game",
+			"par_simple_1" : "par. 14 simple",
+			"par_game_2" : "par. 15 game",
+			"par_simple_2" : "par. 15 simple"
+		}, {
+			"round" : 5,
+			"par_game_0" : "par. 12 game",
+			"par_simple_0" : "par. 12 simple",
+			"par_game_1" : "par. 14 game",
+			"par_simple_1" : "par. 14 simple",
+			"par_game_2" : "par. 15 game",
+			"par_simple_2" : "par. 15 simple"
+		}, {
+			"round" : 6,
+			"par_game_0" : "par. 12 game",
+			"par_simple_0" : "par. 12 simple",
+			"par_game_1" : "par. 14 game",
+			"par_simple_1" : "par. 14 simple",
+			"par_game_2" : "par. 15 game",
+			"par_simple_2" : "par. 15 simple"
+		} ];
+		var topPars = [ "12", "14", "15" ];
+
+		var chartLines;
+		/*var chartLinesData = [{
+				year: 2005,
+				income: 23.5,
+				expenses: 18.1},
+		{
+				year: 2006,
+				income: 26.2,
+				expenses: 22.8},
+		{
+				year: 2007,
+				income: 30.1,
+				expenses: 23.9},
+		{
+				year: 2008,
+				income: 29.5,
+				expenses: 25.1},
+		{
+				year: 2009,
+				income: 24.6,
+				expenses: 25.0}];*/
+
+		var lineType = "type";
+
+		function createChartLines() {
+			// SERIAL chartLines  
+			chartLines = new AmCharts.AmSerialChart();
+			chartLines.pathToImages = "amcharts_2.10.4/images/";
+			chartLines.autoMarginOffset = 0;
+			chartLines.marginRight = 0;
+			chartLines.dataProvider = chartLinesData;
+			chartLines.categoryField = "round";
+			chartLines.startDuration = 1;
+
+			// AXES
+			// category
+			var categoryAxis = chartLines.categoryAxis;
+			categoryAxis.gridPosition = "start";
+
+			// line
+			for ( var i = 0; i < 3; i++) {
+				var graph2 = new AmCharts.AmGraph();
+				graph2.type = "line";
+				graph2.valueField = "game_" + lineType + "_" + i;
+				graph2.lineThickness = 2;
+				graph2.bullet = "round";
+				graph2.title = "par. " + topPars[i] + " in game";
+				graph2.lineColor = colorArr[i + 1];
+				graph2.markerType = "line";
+				chartLines.addGraph(graph2);
+			}
+
+			// LEGEND                
+			var legend = new AmCharts.AmLegend();
+			chartLines.addLegend(legend);
+
+			for ( var i = 0; i < 3; i++) {
+				var graph2 = new AmCharts.AmGraph();
+				graph2.type = "line";
+				graph2.dashLength = 5;
+				graph2.valueField = "simple_" + lineType + "_" + i;
+				graph2.lineThickness = 2;
+				graph2.bullet = "square";
+				graph2.title = "par. " + topPars[i] + " in simple";
+				graph2.lineColor = colorArr[i + 1];
+				graph2.markerType = "dashedLine";
+				chartLines.addGraph(graph2);
+			}
+			chartLines
+					.addTitle("Number of "
+							+ lineType
+							+ "s for the 3 most popular paragraphs,\nafter each round of the game");
+
+			// WRITE
+			chartLines.write("chartdivlines");
+		}
+		function setLine() {
+			if (document.getElementById("lb1").checked) {
+				lineType = "type";
+			} else if (document.getElementById("lb2").checked) {
+				lineType = "term";
+			} else {
+				lineType = "word";
+			}
+			createChartLines();
+		}
+	</script>
+	<div id="chartdivlines" style="width: 1150px; height: 500px;"></div>
+	<div style="margin-left: 30px;">
+		<input type="radio" checked="true" name="group" id="lb1"
+			onclick="setLine()">term types <input type="radio"
+			name="group" id="lb2" onclick="setLine()">unique terms <input
+			type="radio" name="group" id="lb3" onclick="setLine()">words
+	</div>
+
+</body>
+
+</html>

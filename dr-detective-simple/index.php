@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -24,12 +24,12 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active" ><a href="#">Task</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="about.php">About</a></li>
             </ul>
             
             <ul class="nav pull-right">
               <li class="navmsg">Hi <span class="navimp" id="navuser"></span>! You scored: <span class="navimp" id="navscore"> </span> points</li>
-              <li><a href="login.php">(logout)</a></li>
+              <li><a href="logout.php">(logout)</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
